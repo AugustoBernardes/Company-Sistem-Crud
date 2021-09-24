@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Error</title>
+</head>
+<body>
+    <div class="container d-flex flex-column  mx-auto bg-secondary p-5" style="margin-top: 180px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.705);max-width: 400px;">
+        <% if (message) { %>
+            <h2 class="text-center text-danger"><%= message %></h2>
+        <% }else{  %>
+            <h2 class="text-center text-danger">Happened a error !</h2>
+        <% } %>
+        <a href="/" class="btn btn-primary mt-2">Back</a>
+    </div>
+    <h3 class="text-center mt-3 mb-3">Developed by <a class="text-secondary " style="text-decoration:none;" href="https://github.com/AugustoBernardes" >Augusto</a></h3>
+</body>
+</html>
