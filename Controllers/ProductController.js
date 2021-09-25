@@ -62,7 +62,7 @@ const addProduct = async (req,res) => {
         res.redirect('/products')
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`Product didn't saved!`})
+        res.render('error', {message:`Product didn't save!`})
     }
 
 
