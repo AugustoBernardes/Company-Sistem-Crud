@@ -44,6 +44,8 @@ The products will be saved like the customers but will calculate the total and d
 ```
 
 # Observation
+  Fist of all the CSS is not to good because i wasn't wanting expend too much time making the Front-End i prefer the Back-End,\
+  because this the mobile version can show some problems.\
   Change the file(.env_sample) to .env, and complete using your own data.\
   Nodemon it's not necessary but if you want change the start to (node app.js)\
   And check if you have [Node](https://nodejs.org/en/).\
