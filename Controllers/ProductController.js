@@ -8,18 +8,18 @@ const productsHomePage = async (req,res) => {
     try {   
         // Receiving the Data from DB pushing on array and and reducing to calculate the total!         
         const reducer = (previousValue, currentValue) => (previousValue + currentValue);
-        let  document = await Product.find({})
+        let  documents = await Product.find({})
         let totals = []
 
-        document.forEach((doc) => {
+        documents.forEach((doc) => {
             totals.push(doc.total)
         })
 
         if(totals == ''){
-            res.render('allProducts', {products: document, total:0})
+            res.render('allProducts', {products: documents, total:0})
         }else{
             let total =  totals.reduce(reducer)
-            res.render('allProducts', {products: document, total:total})
+            res.render('allProducts', {products: documents, total:total})
         }
 
         
