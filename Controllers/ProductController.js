@@ -62,7 +62,7 @@ const addProduct = async (req,res) => {
         res.redirect('/products')
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`Product didn't save!`})
+        res.render('error', {message:`Product was not added!`})
     }
 
 
@@ -82,7 +82,7 @@ const loadEditPage = async (req,res) => {
         
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`Edit Page didn't load!`})
+        res.render('error', {message:`Edit Page was not loaded!`})
     }
 }
 
@@ -112,7 +112,7 @@ const editProduct = async (req,res) => {
         res.redirect('/products')
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`Product wasn't save!`})
+        res.render('error', {message:`Product was not saved!`})
     }
 
 }
@@ -129,7 +129,7 @@ const productDelete = async (req,res) => {
         res.redirect('/products')
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`Product didn't delete!`})
+        res.render('error', {message:`Product was not deleted!`})
     }
 
 }
