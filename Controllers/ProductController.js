@@ -5,12 +5,10 @@ const Product = require('../Models/Product')
 
 const productsHomePage = async (req,res) => {
 
-    try {
-
+    try {   
+        // Receiving the Data from DB pushing on array and and reducing to calculate the total!         
         const reducer = (previousValue, currentValue) => (previousValue + currentValue);
-
         let  document = await Product.find({})
-
         let totals = []
 
         document.forEach((doc) => {
