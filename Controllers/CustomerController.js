@@ -9,7 +9,7 @@ const customerHomePage = async (req,res) => {
         res.status(200)
         res.render('allCustomers', {customers: document})
     } catch (error) {
-        res.render('error', {message:`customer was not loaded`})
+        res.render('error', {message:`Customer was not loaded`})
     }
 }
 
@@ -43,7 +43,7 @@ const addCustomer = async (req,res) => {
         
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`customer was not added!`})
+        res.render('error', {message:`Customer was not added!`})
     }
 }
 
@@ -59,7 +59,7 @@ const customerDelete =  async (req,res) => {
         res.redirect('/customers')
     } catch (error) {
         res.status(400)
-        res.render('error', {message:`customer was not deleted!`})
+        res.render('error', {message:`Customer was not deleted!`})
     }
 }
 
