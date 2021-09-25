@@ -16,7 +16,8 @@ On file LoginController line 33\
 
 After making the loggin using JWT one token is created and sent to cookies.\
 All the GET routes have a middleware to verify if have the token, if not you would be redirected to error page.\
-sending the message `Acess denied!`
+sending the message `Acess denied!`\
+The products will be saved like the customers but will calculate the total and display to the user to know how much money the company have on inventory.
 
 ```bash
   
