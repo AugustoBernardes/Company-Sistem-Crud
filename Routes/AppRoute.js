@@ -2,9 +2,13 @@ const express = require('express')
 const router = express.Router()
 const methodOverride = require('method-override')
 const auth = require('../Controllers/AuthToken')
+// Customer Controller 
 const { customerAddPage, customerHomePage, addCustomer,customerDelete,loadCustomerEditPage,editCustomer } = require('../Controllers/CustomerController')
+// Product Controller 
 const { productsHomePage,loadAddProductPage,addProduct, loadEditPage,editProduct, productDelete } = require('../Controllers/ProductController')
+// Login Controller 
 const { loadPage, login, loadHome } = require('../Controllers/LoginController')
+// No Route Controller
 const { noRoute } = require('../Controllers/NoRouteController')
 // ------------------------------
 router.use(methodOverride('_method'))
@@ -22,6 +26,7 @@ router.get('/editcustomer/:id', auth, loadCustomerEditPage)
 router.get('/products', auth, productsHomePage)
 router.get('/addproduct',auth, loadAddProductPage)
 router.get('/editproduct/:id', auth,loadEditPage)
+// Route undefined
 router.get('*', noRoute )
 
 // POST
