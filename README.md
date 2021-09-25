@@ -23,6 +23,7 @@ All the GET routes have a middleware to verify if have the token and if the toke
 sending the message `Acess denied!`\
 The products will be saved like the customers but will calculate the total and display to the user to know how much money the company have on inventory.
 
+# Dependencies
 ```bash
   
   $ npm install bcryptjs-nodejs
@@ -48,14 +49,11 @@ The products will be saved like the customers but will calculate the total and d
 ```
 
 # Observation
-  Fist of all the CSS is not to good because i wasn't wanting expend too much time making the Front-End i prefer the Back-End,
-  because this the mobile version can show some problems.
-  -
-  Change the file(.env_sample) to .env, and complete using your own data.
-  -
-  Nodemon it's not you can change the start script to (node app.js)
-  -
-  And check if you have [Node](https://nodejs.org/en/).\
+  First of all the CSS is not to good because i wasn't wanting expend too much time making the Front-End i prefer the Back-End,
+  because this the mobile version can show some problems.\
+  Change the file(.env_sample) to .env, and complete using your own data.\
+  Nodemon it's not you can change the start script to (node app.js)\
+  And check if you have [Node](https://nodejs.org/en/).
   
 
 # Design
