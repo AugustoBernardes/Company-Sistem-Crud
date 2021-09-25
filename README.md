@@ -6,7 +6,7 @@ To test the app click [Here](https://company-sistem.herokuapp.com) to acess the 
 Email: admin@admin.com
 Password: 123456
 ```
-To change the user follow this model!
+To change the User follow this model!
 -
 I encrypted the password using bcrypt if you don't want is just remove the verification part.\
 On file LoginController line 33\
@@ -14,8 +14,8 @@ On file LoginController line 33\
 
 # Explanation
 
-After making the loggin using JWT one token is created and sent to cookies.\
-All the GET routes have a middleware to verify if have the token, if not you would be redirected to error page.\
+After making the loggin using JWT a token is created and sent to cookies.\
+All the GET routes have a middleware to verify if have the token and if the token is valid, if not you would be redirected to error page.\
 sending the message `Acess denied!`\
 The products will be saved like the customers but will calculate the total and display to the user to know how much money the company have on inventory.
 
