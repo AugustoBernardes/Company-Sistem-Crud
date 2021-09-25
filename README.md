@@ -12,7 +12,7 @@ Password: 123456
 
 After making the login using JWT a token is create and send to cookies.\
 All the GET routes have a middleware to verify if have the token and if the token is valid, if not you would be redirected to error page.\
-sending the message `Acess denied!`\
+Sending the message `Acess denied!`\
 The products will be saved like the customers but will calculate the total and display to the user to know how much money the company have on inventory.
 
 To change the User follow this model!
