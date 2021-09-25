@@ -8,12 +8,12 @@ Password: 123456
 ```
 # Explanation
 After making the login using JWT a token is create and send to cookies.\
-All the GET routes have a middleware to verify if have the token and if the token is valid, if not you will be redirected to error page.\
+All the GET routes have a middleware to verify if have the token and if the token is valid, if not you will be redirect to error page.\
 Sending the message `Acess denied!`\
-The products will be saved like the customers but the products page have a feature to calculate the total and display to the user to know how much money the company have on inventory.
+The products will be save like the customers but the products page have a feature to calculate the total and display to the user to know how much money the company have on inventory.
 
 # User 
-On your Data Base add the user like the image bellow\
+On your Data Base add the user like the image bellow.\
 The sistem is cheking the cryptography , if you don't want this feature is just remove the bcrypt verification.
 ![5Image](design/design6.png)
 # Mental Map
@@ -44,11 +44,11 @@ The sistem is cheking the cryptography , if you don't want this feature is just 
 ```
 
 # Observation
-  First of all the CSS is not to good because i wasn't wanting expend too much time making the Front-End i prefer the Back-End,
+  First of all the CSS is not too good because i wasn't wanting expend too much time making the Front-End so i used BootStrap,
   because this the mobile version can show some problems.\
   Change the file(.env_sample) to .env, and complete using your own data.\
-  Nodemon it's not you can change the start script to (node app.js)\
-  And check if you have [Node](https://nodejs.org/en/).
+  Nodemon it's not necessary you can change the start script to (node app.js)\
+  Before use this app on your localhost check if you have [Node](https://nodejs.org/en/).
   
 
 # Design
