@@ -1,7 +1,7 @@
 # ⚙️Company-Sistem-Crud
 What this sistem do ?\
 This sistem save customers and products data to a company. This app have just one user but you can change using your own email and password.\
-To test the app click [Here](https://company-sistem.herokuapp.com) to acess the app use this credencials...
+To test the app click [Here](https://company-sistem.herokuapp.com) to acess it use this credencials...
 ```bash
 Email: admin@admin.com
 Password: 123456
