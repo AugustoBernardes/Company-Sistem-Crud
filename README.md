@@ -12,6 +12,10 @@ I encrypted the password using bcrypt if you don't want is just remove the verif
 On file LoginController line 33\
 ![5Image](design/design6.png)
 
+# Mental Map
+This was my first idea how the sistem would work.
+-
+![7Image](design/design7.png)
 # Explanation
 
 After making the loggin using JWT a token is created and sent to cookies.\
