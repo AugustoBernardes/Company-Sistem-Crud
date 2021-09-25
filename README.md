@@ -6,21 +6,18 @@ To test the app click [Here](https://company-sistem.herokuapp.com) to acess the 
 Email: admin@admin.com
 Password: 123456
 ```
+# Explanation
+After making the login using JWT a token is create and send to cookies.\
+All the GET routes have a middleware to verify if have the token and if the token is valid, if not you will be redirected to error page.\
+Sending the message `Acess denied!`\
+The products will be saved like the customers but the products page have a feature to calculate the total and display to the user to know how much money the company have on inventory.
+
+# User 
+On your Data Base add the user like the image bellow\
+The sistem is cheking the cryptography , if you don't want this feature is just remove the bcrypt verification.
+![5Image](design/design6.png)
 # Mental Map
 ![7Image](design/design7.png)
-# Explanation
-
-After making the login using JWT a token is create and send to cookies.\
-All the GET routes have a middleware to verify if have the token and if the token is valid, if not you would be redirected to error page.\
-Sending the message `Acess denied!`\
-The products will be saved like the customers but will calculate the total and display to the user to know how much money the company have on inventory.
-
-To change the User follow this model!
--
-I encrypted the password using bcrypt if you don't want is just remove the verification part.\
-On file LoginController line 33\
-![5Image](design/design6.png)
-
 # Dependencies
 ```bash
   
